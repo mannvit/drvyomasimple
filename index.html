@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Vyoma Mehta Dholakia - Best Dermatologist in Ahmedabad. Expert skin treatments for acne, pigmentation, hair loss, anti-aging & aesthetic care. Book your consultation today.">
+    <meta name="keywords" content="Best Dermatologist in Ahmedabad, Skin Clinic Ahmedabad, Acne Treatment Ahmedabad, Pigmentation Treatment, Hair Loss Treatment, Anti-Aging, Botox Ahmedabad, Chemical Peels, Laser Treatment Ahmedabad, Dr Vyoma">
+    <meta name="author" content="Dr. Vyoma Mehta Dholakia">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Dr. Vyoma Mehta Dholakia | Best Dermatologist in Ahmedabad">
+    <meta property="og:description" content="Expert dermatology & aesthetic care. Personalized treatments for acne, pigmentation, hair loss, and anti-aging. Book your consultation today.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <title>Dr. Vyoma Mehta Dholakia | Best Dermatologist in Ahmedabad | Skin Clinic</title>
+
+    <!-- Schema.org Medical Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Dr. Vyoma Mehta Dholakia - Dermatology Clinic",
+        "image": "images/doctor.png",
+        "description": "Expert dermatology and aesthetic care clinic in Ahmedabad, India.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "301, Stellar Complex, Near Nehru Nagar Circle, Ambawadi",
+            "addressLocality": "Ahmedabad",
+            "addressRegion": "Gujarat",
+            "postalCode": "380015",
+            "addressCountry": "IN"
+        },
+        "telephone": "+919876543210",
+        "email": "clinic@drvyoma.com",
+        "url": "https://www.drvyoma.com",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "10:00",
+                "closes": "19:00"
+            }
+        ],
+        "medicalSpecialty": "Dermatology",
+        "priceRange": "₹₹"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">Dr. Vyoma</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Offer Banner -->
+    <div class="offer-banner" id="offerBanner">
+        <div class="container">
+            <span>✨ <strong>Special Offer:</strong> Free Consultation for First-Time Visitors! <a href="#appointment">Book Now →</a></span>
+            <button class="offer-close" id="offerClose" aria-label="Close offer banner">✕</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar banner-open" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Dr. Vyoma</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#enquiry" class="nav-link">Enquiry</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#appointment" class="nav-cta">Book Appointment</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#results" class="mobile-link">Results</a></li>
+            <li><a href="#testimonials" class="mobile-link">Reviews</a></li>
+            <li><a href="#enquiry" class="mobile-link">Enquiry</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+            <li><a href="#appointment" class="mobile-link nav-cta">Book Appointment</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: url('images/hero-bg.png');">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Healthy Skin,<br><span class="highlight">Confident You</span></h1>
+                    <p>Expert Dermatology & Aesthetic Care by Dr. Vyoma. Experience personalized treatments that reveal your skin's natural radiance.</p>
+                    <div class="hero-buttons">
+                        <a href="#appointment" class="btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            Book Appointment
+                        </a>
+                        <a href="#services" class="btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            View Treatments
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/doctor.png" alt="Dr. Vyoma Mehta Dholakia - Dermatologist in Ahmedabad" loading="eager">
+                    <div class="hero-badge">
+                        <span class="badge-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        </span>
+                        <span>Certified Dermatologist</span>
+                    </div>
+                    <div class="hero-badge">
+                        <span class="badge-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </span>
+                        <span>Advanced Skin Treatments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Meet Your Dermatologist</h2>
+                <p>Dedicated to helping you achieve your healthiest, most radiant skin</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper animate-on-scroll">
+                    <img src="images/clinic.png" alt="Dr. Vyoma's Dermatology Clinic Interior" loading="lazy">
+                </div>
+                <div class="about-text animate-on-scroll" data-delay="0.2">
+                    <span class="title">About Dr. Vyoma</span>
+                    <h3>Dr. Vyoma Mehta Dholakia</h3>
+                    <p>With years of dedicated practice in clinical and cosmetic dermatology, Dr. Vyoma brings a unique combination of medical expertise and aesthetic sensibility to every consultation. Trained at premier institutions and continually advancing her knowledge with the latest global dermatological innovations, she is committed to delivering safe, effective, and personalized skincare solutions.</p>
+                    <p>Her patient-first philosophy ensures every treatment plan is tailored to individual skin types, concerns, and goals — whether it's managing chronic skin conditions or enhancing your natural beauty through advanced aesthetic procedures.</p>
+                    <div class="about-specializations">
+                        <span class="spec-tag">Acne & Scars</span>
+                        <span class="spec-tag">Pigmentation</span>
+                        <span class="spec-tag">Hair Loss</span>
+                        <span class="spec-tag">Anti-Aging</span>
+                        <span class="spec-tag">Laser Therapy</span>
+                        <span class="spec-tag">Aesthetic Treatments</span>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item animate-on-scroll" data-delay="0.3">
+                            <div class="stat-number" data-target="5000">0</div>
+                            <div class="stat-label">Patients Treated</div>
+                        </div>
+                        <div class="stat-item animate-on-scroll" data-delay="0.4">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item animate-on-scroll" data-delay="0.5">
+                            <div class="stat-number" data-target="25">0</div>
+                            <div class="stat-label">Treatments Offered</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Our Treatments</h2>
+                <p>Comprehensive skin solutions combining science, technology, and personalized care</p>
+            </div>
+            <div class="services-grid">
+                <!-- Acne Treatment -->
+                <div class="service-card animate-on-scroll" data-delay="0.1">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                    </div>
+                    <h3>Acne Treatment</h3>
+                    <p>Advanced medical solutions for all types of acne, from mild breakouts to severe cystic acne and scar management.</p>
+                    <a href="#appointment" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Pigmentation -->
+                <div class="service-card animate-on-scroll" data-delay="0.2">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </div>
+                    <h3>Pigmentation & Brightening</h3>
+                    <p>Targeted therapies for dark spots, melasma, and uneven skin tone to restore your natural luminous complexion.</p>
+                    <a href="#appointment" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Hair Loss -->
+                <div class="service-card animate-on-scroll" data-delay="0.3">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Hair Loss Treatment</h3>
+                    <p>Comprehensive hair restoration with PRP therapy, mesotherapy, and scientifically-proven treatments for hair regrowth.</p>
+                    <a href="#appointment" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Anti-Aging -->
+                <div class="service-card animate-on-scroll" data-delay="0.4">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>Anti-Aging & Botox</h3>
+                    <p>Turn back the clock with expert anti-aging procedures including Botox, fillers, and advanced skin tightening treatments.</p>
+                    <a href="#appointment" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Chemical Peels -->
+                <div class="service-card animate-on-scroll" data-delay="0.5">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </div>
+                    <h3>Chemical Peels</h3>
+                    <p>Medical-grade peels customized for your skin type to improve texture, minimize pores, and reveal a fresh glow.</p>
+                    <a href="#appointment" class="service-link">Learn More →</a>
+                </div>
+
+                <!-- Laser -->
+                <div class="service-card animate-on-scroll" data-delay="0.6">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C8A97E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                    </div>
+                    <h3>Laser Treatments</h3>
+                    <p>State-of-the-art laser technology for hair removal, skin resurfacing, scar treatment, and tattoo removal.</p>
+                    <a href="#appointment" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Results Section -->
+    <section class="results" id="results">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Transformative Results</h2>
+                <p>Real results from our personalized treatment programs</p>
+            </div>
+            <div class="results-container animate-on-scroll">
+                <div class="before-after-slider" id="baSlider">
+                    <img src="images/before-after.png" alt="Before and After Treatment Results" class="ba-image" id="baImage">
+                    <div class="ba-overlay">
+                        <span class="ba-label" id="baLabel">Acne Treatment → Clear Skin</span>
+                        <p class="ba-description" id="baDescription">Significant improvement in acne and skin texture after 12 weeks of personalized treatment.</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="baPrev" aria-label="Previous result">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="slider-dot active" data-index="0"></span>
+                        <span class="slider-dot" data-index="1"></span>
+                        <span class="slider-dot" data-index="2"></span>
+                    </div>
+                    <button class="slider-btn next" id="baNext" aria-label="Next result">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
+                <p class="disclaimer">* Results may vary. Individual outcomes depend on skin type and treatment compliance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose" id="why-choose">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Why Choose Dr. Vyoma</h2>
+                <p>Excellence in every aspect of your skincare journey</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll" data-delay="0.1">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                    </div>
+                    <div>
+                        <h3>Personalized Treatment Plans</h3>
+                        <p>Every patient receives a customized treatment protocol designed for their unique skin type, concerns, and lifestyle goals.</p>
+                    </div>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="0.2">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <div>
+                        <h3>Latest Technology</h3>
+                        <p>Our clinic is equipped with cutting-edge dermatological equipment and follows international treatment protocols.</p>
+                    </div>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="0.3">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div>
+                        <h3>Hygienic & Safe Procedures</h3>
+                        <p>We maintain the highest standards of sterilization and safety, ensuring a comfortable and risk-free treatment experience.</p>
+                    </div>
+                </div>
+                <div class="feature-card animate-on-scroll" data-delay="0.4">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <div>
+                        <h3>Trusted by 5000+ Patients</h3>
+                        <p>Our growing community of satisfied patients is a testament to our commitment to delivering exceptional dermatological care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Patient Stories</h2>
+                <p>Hear from those who've experienced the transformation</p>
+            </div>
+            <div class="testimonials-carousel" id="testimonialCarousel">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <blockquote>"Dr. Vyoma completely transformed my skin. After years of struggling with persistent acne, her personalized treatment plan gave me clear, glowing skin in just 3 months. I finally feel confident without makeup!"</blockquote>
+                        <div class="patient-name">Priya S.</div>
+                        <div class="patient-detail">Acne Treatment Patient</div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <blockquote>"I was skeptical about laser treatment, but Dr. Vyoma explained everything patiently and the results exceeded my expectations. The pigmentation on my face has reduced by 80%. Highly recommend her clinic!"</blockquote>
+                        <div class="patient-name">Ananya R.</div>
+                        <div class="patient-detail">Pigmentation Treatment Patient</div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <blockquote>"The best dermatologist in Ahmedabad, hands down! Dr. Vyoma's PRP therapy for my hair loss showed visible results within 6 sessions. The clinic is clean, modern, and the staff is incredibly welcoming."</blockquote>
+                        <div class="patient-name">Rahul M.</div>
+                        <div class="patient-detail">Hair Loss Treatment Patient</div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card">
+                        <div class="stars">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <blockquote>"I got a chemical peel done for my wedding prep, and my skin looked absolutely radiant on the big day. Dr. Vyoma understands exactly what your skin needs. She's not just a doctor, she's an artist with skincare!"</blockquote>
+                        <div class="patient-name">Kavya D.</div>
+                        <div class="patient-detail">Chemical Peel Patient</div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="test-btn prev" id="testPrev" aria-label="Previous testimonial">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="test-btn next" id="testNext" aria-label="Next testimonial">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+                </div>
+                <div class="testimonial-dots" id="testimonialDots">
+                    <span class="test-dot active" data-index="0"></span>
+                    <span class="test-dot" data-index="1"></span>
+                    <span class="test-dot" data-index="2"></span>
+                    <span class="test-dot" data-index="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram" id="instagram">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Follow Our Journey</h2>
+                <p>Skincare tips, results, and behind-the-scenes on Instagram</p>
+            </div>
+            <div class="instagram-grid animate-on-scroll">
+                <a href="https://www.instagram.com/drvyoma_dermatologist/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="images/insta-1.png" alt="Skincare products and tools" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"></rect><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.5" fill="white"></circle></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/drvyoma_dermatologist/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="images/insta-2.png" alt="Facial treatment procedure" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"></rect><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.5" fill="white"></circle></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/drvyoma_dermatologist/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="images/insta-3.png" alt="Healthy glowing skin" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"></rect><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.5" fill="white"></circle></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/drvyoma_dermatologist/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="images/insta-4.png" alt="Clinic treatment room" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"></rect><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.5" fill="white"></circle></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/drvyoma_dermatologist/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="images/insta-5.png" alt="Hydrated healthy skin" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"></rect><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.5" fill="white"></circle></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/drvyoma_dermatologist/" target="_blank" rel="noopener noreferrer" class="insta-item">
+                    <img src="images/insta-6.png" alt="Dermatoscopy examination" loading="lazy">
+                    <div class="insta-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="white" stroke-width="2"></rect><circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"></circle><circle cx="17.5" cy="6.5" r="1.5" fill="white"></circle></svg>
+                    </div>
+                </a>
+            </div>
+            <div class="insta-follow animate-on-scroll">
+                <a href="https://www.instagram.com/drvyoma_dermatologist/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><circle cx="12" cy="12" r="5"></circle><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"></circle></svg>
+                    Follow @drvyoma_dermatologist
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment CTA Section -->
+    <section class="appointment-cta" id="appointment">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2>Book Your Consultation Today</h2>
+                <p>Take the first step towards healthier, more beautiful skin. Schedule your appointment with Dr. Vyoma now.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919876543210?text=Hi%20Dr.%20Vyoma,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener noreferrer" class="cta-btn cta-whatsapp">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp Booking
+                    </a>
+                    <a href="tel:+919876543210" class="cta-btn cta-call">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section class="enquiry-section" id="enquiry">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Send Us an Enquiry</h2>
+                <p>Fill in your details and we'll get back to you within 24 hours</p>
+            </div>
+            <div class="enquiry-wrapper animate-on-scroll">
+                <div class="enquiry-info">
+                    <div class="enquiry-info-card">
+                        <div class="enquiry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div>
+                            <h4>Quick Response</h4>
+                            <p>We typically respond to enquiries within a few hours during clinic hours.</p>
+                        </div>
+                    </div>
+                    <div class="enquiry-info-card">
+                        <div class="enquiry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div>
+                            <h4>Your Privacy Matters</h4>
+                            <p>Your information is kept strictly confidential and used only for consultation purposes.</p>
+                        </div>
+                    </div>
+                    <div class="enquiry-info-card">
+                        <div class="enquiry-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Clinic Hours</h4>
+                            <p>Mon – Sat: 10:00 AM – 7:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="enquiryForm" class="enquiry-form" novalidate>
+                    <!-- Web3Forms Access Key (replace with your own from https://web3forms.com) -->
+                    <input type="hidden" name="access_key" value="465c6b68-86e8-4ae5-94e8-f88eb94c7c94">
+                    <input type="hidden" name="subject" value="New Patient Enquiry — Dr. Vyoma Clinic Website">
+                    <input type="hidden" name="from_name" value="Dr. Vyoma Clinic Website">
+                    <!-- Honeypot for spam prevention -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+                    <div class="form-header">
+                        <h3>Request a Consultation</h3>
+                        <p>Fields marked with <span class="required-star">*</span> are required</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiry-name">Full Name <span class="required-star">*</span></label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <input type="text" id="enquiry-name" name="name" placeholder="Enter your full name" required autocomplete="name">
+                        </div>
+                        <span class="field-error" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiry-phone">Mobile Number <span class="required-star">*</span></label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                            <input type="tel" id="enquiry-phone" name="phone" placeholder="e.g. 98765 43210" required autocomplete="tel" pattern="[0-9\s\-\+]{10,15}">
+                        </div>
+                        <span class="field-error" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiry-email">Email Address</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <input type="email" id="enquiry-email" name="email" placeholder="your@email.com (optional)" autocomplete="email">
+                        </div>
+                        <span class="field-error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="enquiry-purpose">Purpose of Visit</label>
+                        <div class="input-wrapper textarea-wrapper">
+                            <svg class="input-icon textarea-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line></svg>
+                            <textarea id="enquiry-purpose" name="purpose" rows="3" placeholder="e.g. Acne treatment consultation, Skin brightening, Hair loss concern..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary form-submit" id="formSubmitBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        <span class="btn-text">Send Enquiry</span>
+                        <span class="btn-loader" style="display:none;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin-icon"><circle cx="12" cy="12" r="10" stroke-dasharray="31.4 31.4" stroke-dashoffset="0"></circle></svg>
+                            Sending...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Toast Notification -->
+        <div class="toast" id="formToast">
+            <div class="toast-icon" id="toastIcon">✓</div>
+            <div class="toast-message" id="toastMessage">Your enquiry has been sent successfully!</div>
+            <button class="toast-close" id="toastClose" aria-label="Close notification">✕</button>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Visit Our Clinic</h2>
+                <p>Conveniently located in the heart of Ahmedabad</p>
+            </div>
+            <div class="contact-grid animate-on-scroll">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div>
+                            <h4>Clinic Address</h4>
+                            <p>301, Stellar Complex, Near Nehru Nagar Circle,<br>Ambawadi, Ahmedabad — 380015, Gujarat</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Clinic Hours</h4>
+                            <p>Monday – Saturday: 10:00 AM – 7:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>clinic@drvyoma.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0!2d72.56!3d23.03!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAyJzAyLjAiTiA3MsKwMzMnMzYuMCJF!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Dr. Vyoma's Clinic Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to the most common skin and treatment concerns</p>
+            </div>
+            <div class="faq-container animate-on-scroll">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I know which treatment is right for my skin?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>During your initial consultation, Dr. Vyoma performs a thorough skin analysis using advanced diagnostic tools. Based on your skin type, concerns, lifestyle, and medical history, she recommends a personalized treatment plan tailored specifically for you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Are the treatments safe? What about side effects?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All our treatments are FDA-approved and performed under strict medical protocols. Dr. Vyoma discusses potential side effects, recovery time, and aftercare instructions before any procedure. Patient safety is always our top priority.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How many sessions will I need for visible results?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The number of sessions varies based on the treatment type and individual skin condition. Typically, patients notice improvement within 2-4 sessions. Dr. Vyoma provides a clear treatment timeline during your consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer payment plans or EMI options?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we understand that skincare is an investment. We offer flexible payment options including EMI plans through select credit cards and financing partners. Please contact our clinic for details on available plans.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What should I do to prepare for my first visit?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Come with a clean face (no heavy makeup), bring any previous medical reports or prescriptions related to your skin, and note down your skin concerns. Arrive 10 minutes early to complete the registration process. No special preparation is needed!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Dr. Vyoma</div>
+                    <p>Expert dermatology and aesthetic care in Ahmedabad. Helping you achieve healthy, radiant skin with personalized treatment plans and the latest technology.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/drvyoma_dermatologist/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><circle cx="12" cy="12" r="5"></circle><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"></circle></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Dr. Vyoma</a></li>
+                        <li><a href="#services">Treatments</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Treatments</h4>
+                    <ul>
+                        <li><a href="#services">Acne Treatment</a></li>
+                        <li><a href="#services">Pigmentation & Brightening</a></li>
+                        <li><a href="#services">Hair Loss Treatment</a></li>
+                        <li><a href="#services">Anti-Aging & Botox</a></li>
+                        <li><a href="#services">Chemical Peels</a></li>
+                        <li><a href="#services">Laser Treatments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Dr. Vyoma Mehta Dholakia. All Rights Reserved. | Designed with care for your skin.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hi%20Dr.%20Vyoma,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener noreferrer" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
